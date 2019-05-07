@@ -2113,7 +2113,7 @@ var TrafficListService = /** @class */ (function (_super) {
                 TrafficListService_1.losheroesAmount += amount;
                 break;
             case 4:
-                TrafficListService_1.getQRCodeAmount += amount;
+                TrafficListService_1.qrCodeAmount += amount;
                 break;
         }
     };

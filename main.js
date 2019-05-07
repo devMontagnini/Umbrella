@@ -2112,6 +2112,9 @@ var TrafficListService = /** @class */ (function (_super) {
             case 3:
                 TrafficListService_1.losheroesAmount += amount;
                 break;
+            case 4:
+                TrafficListService_1.getQRCodeAmount += amount;
+                break;
         }
     };
     TrafficListService.prototype.getDataWeek = function () {

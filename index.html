@@ -17,26 +17,49 @@
       outline: none;
   }
   *:focus {
-    outline: none;
-}
-    nb-card-header > div.title-infos {
-	padding: 10px 40px!important
-}
+      outline: none;
+  }
 
-nb-card-body > form > div.accounts >  ul > li {
-	margin: 0!important
-}
-	  nb-card-body > form > div.infos > h2 { font-size:12px!important; padding: 3px 0!important; margin: 0 }
-nb-card-body > form > div.infos  input {
-	padding: 8px!important;
-}
+  .cdk-global-scrollblock{
+    position: static!important;
+  }
+  .cdk-global-scrollblock body{
+    overflow: scroll!important;
+  }
 
-nb-card-body > form > div.infos button.ok {
-	margin: 10px 0!important;
-}
+  .cdk-global-scrollblock .cdk-global-overlay-wrapper {
+    top:50px!important;
+    align-items: baseline!important;
+  }
+
+  .cdk-global-scrollblock .cdk-overlay-backdrop {
+    position: fixed!important;
+  }
+
+
+  .cdk-global-scrollblock .nb-theme-default nb-layout.with-scroll .scrollable-container {
+    height: auto!important;
+  }
+
+
+  .cdk-global-scrollblock .cdk-overlay-container {
+    min-height: 100%;
+    position: absolute!important;
+  }
+
+  .cdk-global-scrollblock .cdk-global-overlay-wrapper .cdk-overlay-pane {
+    position: absolute!important;
+    max-height: none!important;
+    width: 700px;
+    left: 50%;
+    margin-left: -350px;
+    top: 50px;
+    display: block;
+  }
+
+
   </style>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <base href="/Umbrella/" />
 </head>
 <body>
     <ngx-app></ngx-app>

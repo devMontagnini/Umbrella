@@ -2102,7 +2102,6 @@ var TrafficListService = /** @class */ (function (_super) {
     }
     TrafficListService_1 = TrafficListService;
     TrafficListService.movement = function (account, amount) {
-        console.log(account);
         switch (account) {
             case 1:
                 TrafficListService_1.paypalAmount += amount;
@@ -2177,10 +2176,12 @@ var TrafficListService = /** @class */ (function (_super) {
     TrafficListService.paypalAmount = 2350000;
     TrafficListService.santanderAmount = 130050;
     TrafficListService.losheroesAmount = 60049;
+    TrafficListService.qrCodeAmount = 1020049;
     TrafficListService.getPaypalAmount = function () { return TrafficListService_1.paypalAmount; };
     TrafficListService.getSantaderAmount = function () { return TrafficListService_1.santanderAmount; };
     TrafficListService.getLosHeroesAmount = function () { return TrafficListService_1.losheroesAmount; };
-    TrafficListService.getTotalAmount = function () { return TrafficListService_1.paypalAmount + TrafficListService_1.santanderAmount + TrafficListService_1.losheroesAmount; };
+    TrafficListService.getQRCodeAmount = function () { return TrafficListService_1.qrCodeAmount; };
+    TrafficListService.getTotalAmount = function () { return TrafficListService_1.paypalAmount + TrafficListService_1.santanderAmount + TrafficListService_1.losheroesAmount + TrafficListService_1.qrCodeAmount; };
     TrafficListService = TrafficListService_1 = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Injectable"])(),
         tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [_periods_service__WEBPACK_IMPORTED_MODULE_3__["PeriodsService"]])
